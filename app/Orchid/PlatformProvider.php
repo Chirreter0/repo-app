@@ -66,11 +66,11 @@ class PlatformProvider extends OrchidServiceProvider
                 ->route('platform.example.cards')
                 ->divider(),
 
-            Menu::make(__('Users'))
+            Menu::make(__('Usuarios'))
                 ->icon('bs.people')
                 ->route('platform.systems.users')
                 ->permission('platform.systems.users')
-                ->title(__('Access Controls')),
+                ->title(__('Control de Acceso')),
 
             Menu::make(__('Roles'))
                 ->icon('bs.shield')
@@ -78,15 +78,15 @@ class PlatformProvider extends OrchidServiceProvider
                 ->permission('platform.systems.roles')
                 ->divider(),
 
-            Menu::make('Documentation')
-                ->title('Docs')
+            Menu::make('Unitropico')
+                ->title('Informacion')
                 ->icon('bs.box-arrow-up-right')
-                ->url('https://orchid.software/en/docs')
+                ->url('http://www.unitropico.edu.co/')
                 ->target('_blank'),
 
             Menu::make('Changelog')
                 ->icon('bs.box-arrow-up-right')
-                ->url('https://github.com/orchidsoftware/platform/blob/master/CHANGELOG.md')
+                ->url('https://github.com/Chirreter0/repo-app/releases/tag/pre-release')
                 ->target('_blank')
                 ->badge(fn () => Dashboard::version(), Color::DARK),
         ];
