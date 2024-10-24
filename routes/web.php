@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Orchid\Screens\PlatformScreen;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::screen('/', PlatformScreen::class)
+    ->name('platform.index');
