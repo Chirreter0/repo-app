@@ -7,6 +7,7 @@
 
             <a class="d-flex justify-content-center mb-4 p-0 px-sm-5" href="{{Dashboard::prefix()}}">
                 @includeFirst([config('platform.template.header'), 'platform::header'])
+                hola
             </a>
 
             <div class="row justify-content-center">

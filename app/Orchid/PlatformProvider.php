@@ -34,37 +34,14 @@ class PlatformProvider extends OrchidServiceProvider
     public function menu(): array
     {
         return [
-            Menu::make('Get Started')
+            Menu::make('Inicio')
                 ->icon('bs.book')
-                ->title('Navigation')
+                ->title('Documentos')
                 ->route(config('platform.index')),
 
-            Menu::make('Sample Screen')
+            Menu::make('Listado')
                 ->icon('bs.collection')
-                ->route('platform.example')
-                ->badge(fn () => 6),
-
-            Menu::make('Form Elements')
-                ->icon('bs.card-list')
-                ->route('platform.example.fields')
-                ->active('*/examples/form/*'),
-
-            Menu::make('Overview Layouts')
-                ->icon('bs.window-sidebar')
-                ->route('platform.example.layouts'),
-
-            Menu::make('Grid System')
-                ->icon('bs.columns-gap')
-                ->route('platform.example.grid'),
-
-            Menu::make('Charts')
-                ->icon('bs.bar-chart')
-                ->route('platform.example.charts'),
-
-            Menu::make('Cards')
-                ->icon('bs.card-text')
-                ->route('platform.example.cards')
-                ->divider(),
+                ->route('platform.example'),
 
             Menu::make(__('Usuarios'))
                 ->icon('bs.people')
@@ -87,8 +64,7 @@ class PlatformProvider extends OrchidServiceProvider
             Menu::make('Changelog')
                 ->icon('bs.box-arrow-up-right')
                 ->url('https://github.com/Chirreter0/repo-app/releases/tag/pre-release')
-                ->target('_blank')
-                ->badge(fn () => Dashboard::version(), Color::DARK),
+                ->target('_blank'),
         ];
     }
 
