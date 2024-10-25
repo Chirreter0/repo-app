@@ -40,7 +40,7 @@ class RoleEditScreen extends Screen
      */
     public function name(): ?string
     {
-        return 'Edit Role';
+        return 'Editar Rol';
     }
 
     /**
@@ -48,7 +48,7 @@ class RoleEditScreen extends Screen
      */
     public function description(): ?string
     {
-        return 'Modify the privileges and permissions associated with a specific role.';
+        return 'Modificar los privilegios y permisos asociados a un rol especifico.';
     }
 
     /**
@@ -91,14 +91,14 @@ class RoleEditScreen extends Screen
             Layout::block([
                 RoleEditLayout::class,
             ])
-                ->title('Role')
-                ->description('A role is a collection of privileges (of possibly different services like the Users service, Moderator, and so on) that grants users with that role the ability to perform certain tasks or operations.'),
+                ->title('Rol')
+                ->description('Un rol es un conjunto de privilegios (de servicios posiblemente diferentes como el servicio de Usuarios, Moderador, etc.) que otorga a los usuarios con ese rol la capacidad de realizar determinadas tareas u operaciones.'),
 
             Layout::block([
                 RolePermissionLayout::class,
             ])
-                ->title('Permission/Privilege')
-                ->description('A privilege is necessary to perform certain tasks and operations in an area.'),
+                ->title('Permisos/Privilegios')
+                ->description('Un privilegio es necesario para realizar determinadas tareas y operaciones en un área.'),
         ];
     }
 
@@ -124,7 +124,7 @@ class RoleEditScreen extends Screen
 
         $role->save();
 
-        Toast::info(__('Role was saved'));
+        Toast::info(__('Rol fue guardado'));
 
         return redirect()->route('platform.systems.roles');
     }
@@ -138,7 +138,7 @@ class RoleEditScreen extends Screen
     {
         $role->delete();
 
-        Toast::info(__('Role was removed'));
+        Toast::info(__('Rol fue eliminado'));
 
         return redirect()->route('platform.systems.roles');
     }
