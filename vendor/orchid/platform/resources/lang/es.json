@@ -134,5 +134,7 @@
     "Update password": "Actualizar contraseña",
     "Systems": "Sistemas",
     "Regular User": "Usuario regular",
-    "Are you sure?": "¿Estás seguro?"
+    "Are you sure?": "¿Estás seguro?",
+    "There are no objects currently displayed": "No hay objetos visualizados",
+    "Import or create objects, or check back later for updates": "Importar o crear objetos, o consultar más tarde las actualizaciones"
 }
