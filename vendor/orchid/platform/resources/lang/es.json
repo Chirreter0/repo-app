@@ -137,5 +137,13 @@
     "Are you sure?": "¿Estás seguro?",
     "There are no objects currently displayed": "No hay objetos visualizados",
     "Import or create objects, or check back later for updates": "Importar o crear objetos, o consultar más tarde las actualizaciones",
-    "Resources":"Documentos"
+    "Resources":"Documentos",
+    "Permissions":"Permisos",
+    "Allow the user to perform some actions that are not provided for by his roles":"los permiso te permiten saber que puede o no puede hacer un usuario, muy util para la seguridad de la informacion",
+    "Create Post":"Crear Publicación",
+    "Delete Post": "Borrar Publicación",
+    "Update Post": "Actualizar Publicación",
+    "Are you sure you want to delete this resource?":"Está seguro de querer eliminar la Publicación?",
+    "The Post was deleted!":"La publicación fue eliminada!",
+    "The Post was created!":"La publicación fue creada"
 }
