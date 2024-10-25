@@ -36,12 +36,8 @@ class PlatformProvider extends OrchidServiceProvider
         return [
             Menu::make('Inicio')
                 ->icon('bs.book')
-                ->title('Documentos')
-                ->route(config('platform.index')),
-
-            Menu::make('Listado')
-                ->icon('bs.collection')
-                ->route('platform.example'),
+                ->route(config('platform.index'))
+                ->divider(),
 
             Menu::make(__('Usuarios'))
                 ->icon('bs.people')
@@ -64,7 +60,9 @@ class PlatformProvider extends OrchidServiceProvider
             Menu::make('Changelog')
                 ->icon('bs.box-arrow-up-right')
                 ->url('https://github.com/Chirreter0/repo-app/releases/tag/pre-release')
-                ->target('_blank'),
+                ->target('_blank')
+                ->divider(),
+
         ];
     }
 
